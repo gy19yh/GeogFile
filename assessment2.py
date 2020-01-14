@@ -44,7 +44,7 @@ for i in range(num_of_agents):
     agents.append(agentframework2.Agent(x,y,z))
       
 for i in range(num_of_agents):  
-    while agents[i].z > 0:
+    while agents[i].z != 0:
         agents[i].Dir_Hori() 
         agents[i].Dir_Vert()       
  
