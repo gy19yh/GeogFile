@@ -28,14 +28,14 @@ with open('wind.raster.txt', newline='') as csvfile: # open the data file named 
         environment.append(rowlist) # add the 'rowlist' into 'environmrnt'
 
 ### located the bacterial weapon and marked as a star ###
-times = 0
+items = 0
 for row in environment:
     for value in row:
         if value != 0:
             x = row.index(value)
-            y = times
+            y = items
               
-    times += 1
+    items += 1
             
 matplotlib.pyplot.scatter(x, y, marker='*')
 
@@ -45,8 +45,8 @@ for i in range(num_of_agents):
       
 for i in range(num_of_agents):  
     while agents[i].z != 0:
-        agents[i].Dir_Hori() 
-        agents[i].Dir_Vert()       
+        agents[i].Hori() 
+        agents[i].Vert()       
  
 ##### step 3: Draws a density map of where all the bacteria end up as an image and displays it on the screen ####    
 for i in range(num_of_agents):   
