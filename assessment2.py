@@ -5,6 +5,7 @@ Created on Sun Dec 15 19:51:59 2019
 @author: Administrator
 """
 import csv
+import random
 import matplotlib
 import agentframework2
 import matplotlib.pyplot 
@@ -15,7 +16,7 @@ import matplotlib.pyplot
 num_of_agents = 5000
 num_of_iterations = 500 
 agents = []
-z = 75
+z = random.randint(75,150)
 
 ######### step 1: Pull in the data file   #########
 environment = [] # A list name 'environment'
@@ -58,7 +59,7 @@ matplotlib.pyplot.xlim(0, 300)
 matplotlib.pyplot.imshow(environment)
 matplotlib.pyplot.show()
 print('Weapon located at the STAR point')
-
+print('The altitude of resource is', z,'meters')
 
 ##### step 4: write the density map into txt file##########
 output=[]
