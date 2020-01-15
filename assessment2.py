@@ -50,7 +50,8 @@ for i in range(num_of_agents):
  
 ##### step 3: Draws a density map of where all the bacteria end up as an image and displays it on the screen ####    
 for i in range(num_of_agents):   
-    matplotlib.pyplot.scatter(agents[i].x,agents[i].y,marker='.')
+    environment[agents[i].y][agents[i].x] += 10
+    #matplotlib.pyplot.scatter(agents[i].x,agents[i].y,marker='.')
       
 matplotlib.pyplot.ylim(0, 300)
 matplotlib.pyplot.xlim(0, 300)
