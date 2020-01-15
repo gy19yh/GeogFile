@@ -14,12 +14,12 @@ class Agent():
         self.z = z
     
     def Hori(self) :
-        FlowDir = random.random()
-        if FlowDir <= 0.05:
+        rate = random.random()
+        if rate <= 0.05:
             self.x = (self.x - 1) 
-        elif 0.05 < FlowDir <= 0.15: 
+        elif 0.05 < rate <= 0.15: 
             self.y = (self.y - 1) 
-        elif 0.15 < FlowDir <= 0.25:
+        elif 0.15 < rate <= 0.25:
             self.y = (self.y + 1) 
         else: 
             self.x = (self.x + 1)
