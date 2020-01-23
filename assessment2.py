@@ -71,7 +71,7 @@ for row in environment:
             x = row.index(value)
             y = zhi
               
-    items += 1
+    zhi += 1
 
 # after locating the resource of the weapon, mark it as a red star    
 matplotlib.pyplot.scatter(x, y, marker='*',color='red')
