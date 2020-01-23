@@ -64,12 +64,12 @@ with open('wind.raster.txt', newline='') as csvfile: # open the data file named 
 
 ### located the bacterial weapon and marked as a star ###
 
-items = 0
+zhi = 0
 for row in environment:
     for value in row:
         if value > 0:
             x = row.index(value)
-            y = items
+            y = zhi
               
     items += 1
 # after locating the resource of the weapon, mark it as a red star    
