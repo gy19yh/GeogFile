@@ -107,7 +107,7 @@ print('The altitude of resource is', z,'meters')
 ##### step 4: write the density map into txt file##########
 output=[]
 # input the title of each row
-output.append('X'+'Y')
+output.append('Y'+'X')
 # input the value of each pair of coordinate
 for i in range(temp): 
     location=[]
