@@ -96,6 +96,7 @@ for i in range(temp):
 # draw a map with the 300*300 size      
 matplotlib.pyplot.ylim(0, 300)
 matplotlib.pyplot.xlim(0, 300)
+matplotlib.pyplot.title("Density Map of Bacteria")
 matplotlib.pyplot.imshow(environment) # shows the environment
 matplotlib.pyplot.show()
 
